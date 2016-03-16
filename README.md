@@ -17,11 +17,22 @@ Publish config:
     php artisan vendor:publish
 ```
 
-Edit config file `config/modelutils.php` with own namespace,
-and in proper model use trait:
+Edit config file `config/modelutils.php` with own namespace.
+
+Use in proper model trait `UuidModel`:
 
 ```php
-    use BeautyCoding\ModelUtils\Traits\UuidModel;
+<?php
+
+use Illuminate\Database\Eloquent\Model;
+use BeautyCoding\ModelUtils\Traits\UuidModel;
+
+class User extends Model
+{
+    use UuidModel; // add this trait to your model
+    ...
+}
+
 ```
 
-Remember - model has to have field named uuid (32characters long) - http://www.ietf.org/rfc/rfc4122.txt
+Model has to have field named uuid (32characters long). Check RFC [RFC](http://www.ietf.org/rfc/rfc4122.txt) for more information.
