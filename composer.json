@@ -1,0 +1,16 @@
+{
+    "name": "beautycoding/modelutils",
+    "description": "Model utils for laravel",
+    "type": "utils",
+    "require": {
+        "ramsey/uuid": "^3.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "AntyRace",
+            "email": "antyrace@antyrace.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
