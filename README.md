@@ -35,4 +35,4 @@ class User extends Model
 
 ```
 
-Model has to have field named uuid (32characters long). Check RFC [RFC](http://www.ietf.org/rfc/rfc4122.txt) for more information.
+Model has to have field named uuid (32characters long). Check [RFC](http://www.ietf.org/rfc/rfc4122.txt) for more information.
