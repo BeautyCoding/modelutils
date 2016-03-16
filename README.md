@@ -1,12 +1,6 @@
 # ModelUtils (Laravel 5 Package)
 
-[![Latest Stable Version](https://poser.pugx.org/beautycoding/modelutils/v/stable)](https://packagist.org/packages/beautycoding/modelutils)
-
-[![Total Downloads](https://poser.pugx.org/beautycoding/modelutils/downloads)](https://packagist.org/packages/beautycoding/modelutils)
-
-[![Latest Unstable Version](https://poser.pugx.org/beautycoding/modelutils/v/unstable)](https://packagist.org/packages/beautycoding/modelutils)
-
-[![License](https://poser.pugx.org/beautycoding/modelutils/license)](https://packagist.org/packages/beautycoding/modelutils)
+[![Latest Stable Version](https://poser.pugx.org/beautycoding/modelutils/v/stable)](https://packagist.org/packages/beautycoding/modelutils)[![Total Downloads](https://poser.pugx.org/beautycoding/modelutils/downloads)](https://packagist.org/packages/beautycoding/modelutils)[![Latest Unstable Version](https://poser.pugx.org/beautycoding/modelutils/v/unstable)](https://packagist.org/packages/beautycoding/modelutils)[![License](https://poser.pugx.org/beautycoding/modelutils/license)](https://packagist.org/packages/beautycoding/modelutils)
 
 In order to install Laravel 5 ModelUtils, just add
 
