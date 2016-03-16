@@ -12,5 +12,10 @@
             "email": "antyrace@antyrace.com"
         }
     ],
+    "autoload": {
+	"psr-4": {
+	    "BeautyCoding\\ModelUtils\\": "src"
+	}
+    },
     "minimum-stability": "dev"
 }
