@@ -55,4 +55,25 @@ trait UuidModel
 
         return $query->where($this->primaryKey, '=', $value)->orWhere('uuid', '=', $value);
     }
+
+    public function scopeFindByUuid($query, $uuid)
+    {
+        if (!is_array($uuid)) {
+            if (!Uuid::isValid($uuid)) {
+                throw (new ModelNotFoundException)->setModel(get_class($this));
+            }
+
+            return $query->where('uuid', $uuid)->first();
+
+        } elseif (is_array($uuid)) {
+            array_map(function ($element) {
+                if (!Uuid::isValid($element)) {
+                    throw (new ModelNotFoundException)->setModel(get_class($this));
+                }
+            }, $uuid);
+
+            return $query->whereIn('uuid', $uuid)->get();
+        }
+
+    }
 }
