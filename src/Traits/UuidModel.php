@@ -56,6 +56,12 @@ trait UuidModel
         return $query->where($this->primaryKey, '=', $value)->orWhere('uuid', '=', $value);
     }
 
+    /**
+     * Method returns models geted by uuid
+     * @param  Builder $query
+     * @param  array|tring $uuid  uuid or list of uuids
+     * @return Collection|Model Single model or collection of models
+     */
     public function scopeFindByUuid($query, $uuid)
     {
         if (!is_array($uuid)) {
